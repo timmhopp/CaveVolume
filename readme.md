@@ -84,3 +84,7 @@ Required columns:
 - `compass`: Bearing (degrees)
 - `clino`: Inclination (degrees)
 - `left`, `right`, `up`, `down`: Passage dimensions (meters)
+
+___
+
+Detailed explanations can be found in the seminar paper pdf
