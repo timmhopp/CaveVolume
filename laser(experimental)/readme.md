@@ -2,7 +2,15 @@
 
 Calculate volumes between two laser measurement circles using frustum approximation.
 
+This is conceptual and has not been tested on real-world data. Only calculations of single segment supported. Calculating point locations possible with main script, subsititue data reading and volume calculation should lead to functioning volume estimation. Corrections should be done on all frustums in segments.
 ## Method
+
+Measurements are considered as $n$ points around X. Points of two measurements are matched by angle. Segments are split into frustum sections.
+
+<p float="left">
+  <img src="https://github.com/timmhopp/CaveVolume/blob/main/laser(experimental)/figures/laser_circles.png" width="49%" />
+  <img src="https://github.com/timmhopp/CaveVolume/blob/main/laser(experimental)/figures/laser_frustum.png" width="39%" />
+</p>
 
 1. **Measurements**: Generate points around two measurement centers with random distances
 2. **Volume Calculation**: Divide the space into frustum sections between corresponding points
