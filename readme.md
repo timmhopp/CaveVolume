@@ -9,6 +9,9 @@ Calculate cave passage volumes from survey data using truncated cone approximati
 ___
 ### Survey Processing
 
+Measurements contain information on distance to the top, bottom, left, and right walls of a cave section from measurement points. Length of the segment, inclination, and orientation are measured for section of cave between current and next measurment point.
+
+
 Calculate point location from section length, compass (yaw; around Z),and clinometer reading (pitch; around Y). First point in data read as (0,0,0).
 
 $$ dx = \text{LENGTH} \cdot \cos(\text{CLINO}) \cdot \sin(90 - \text{COMPASS}) $$
